@@ -5,7 +5,7 @@ import openpyxl
 excel = openpyxl.Workbook()  # Corrected line - added parentheses
 print(excel.sheetnames)
 sheet = excel.active
-'''
+
 sheet.title = "Top Rated Movies"
 print(excel.sheetnames)
 sheet.append(['Movie Rank', 'Movie Name', 'Year of Release', 'IMDB Rating'])
@@ -31,4 +31,4 @@ except Exception as e:
     print(e)
 
 excel.save('IMDB Movie Rating.xlsx')
-'''
+
